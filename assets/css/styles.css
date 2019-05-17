@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h2, h3{
+	font-family: "Neuton", serif;
+	font-weight: bold;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 
+}
+
+span{
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	color: grey;
+}
+
+body{
+	padding: 0 335px;
+	padding-top: 335px;
+}
+
+hr{
+	color: grey;
+	
+}
+
+article{
+	width: 370px;
+	height: 460px;
+}
+
+.container{
+	height: 1170px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 30px;
+	grid-template-areas: "section1 section1"
+						 "section2 aside";
+}
+
+.section-1{
+	grid-area: section1;
+}
+
+.section-1{
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.section-2{
+	grid-area: section2;
+}
+
+.section-2{
+	width: 830px;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+aside{
+	width: 370px;
+	display: grid;
+	grid-area: aside;
+	grid-template-rows: : repeat(7, 1fr);
+}
+
+.fleche{
+	width: 100px;
+	float: left;
+}
+
+li{
+	text-decoration: none;
+	display: inline;
+}
+
+.logo_social{
+	width: 20px;
+	height: 20px;
+}
+
+figure{
+	position: relative;
+}
+
+figcaption{
+	position: absolute;
+	top: 256px;
+	padding: 5px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto blod', sans-serif;
+	font-size: 12px;
+	background-color: black;
+	color: white;
+	z-index: 2;
+}
+
+.img_article{
+	position: absolute;
+	z-index: 1;
+}
